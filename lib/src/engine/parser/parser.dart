@@ -134,7 +134,7 @@ class PacketParser {
 
   static decodePacket(dynamic encodedPacket, binaryType) {
     print(encodedPacket.runtimeType);
-    print(encodedPacket)
+    print(encodedPacket);
 //     if (encodedPacket is! String) {
       return {'type': "message", 'data': mapBinary(encodedPacket, binaryType)};
 //     }
