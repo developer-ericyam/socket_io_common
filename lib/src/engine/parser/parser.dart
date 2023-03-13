@@ -133,12 +133,12 @@ class PacketParser {
   }
 
   static decodePacket(dynamic encodedPacket, binaryType) {
+    print('hehe');
+    print(encodedPacket);
     if (encodedPacket is! String) {
       return {'type': "message", 'data': mapBinary(encodedPacket, binaryType)};
     }
     var type = encodedPacket[0];
-    print(type);
-    print('haha');
     
     if (type == 'b') {
       var buffer =
