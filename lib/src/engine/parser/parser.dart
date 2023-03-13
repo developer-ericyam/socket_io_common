@@ -137,7 +137,9 @@ class PacketParser {
       return {'type': "message", 'data': mapBinary(encodedPacket, binaryType)};
     }
     var type = encodedPacket[0];
-
+    print(type);
+    print('haha');
+    
     if (type == 'b') {
       var buffer =
           base64.decode(utf8.decode(encodedPacket.substring(1).codeUnits));
